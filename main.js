@@ -241,7 +241,7 @@ let day="2";
 // switch(day){
 //     case "1":{
 //         console.log("Lundi");
-//     }
+//     }break;
 //     case "2":{
 //         console.log("Mardi");
 //     }break;
@@ -356,15 +356,191 @@ let day="2";
 // i=5 5<5
 
 
-let sum=0;
-for(let i=1;i<=10;i++){
-    sum=sum+i
-}
+// let sum=0;
+// for(let i=1;i<=10;i++){
+//     sum=sum+i
+// }
 
 
-console.log(sum)
+// console.log(sum)
 
 // 0 sum0  0+0;
 // 1 0   0+=11
 // 2 sum1  1+2=3
-55
+// 55
+
+
+
+
+// break 
+// continue
+
+// for(let i=0;i<10;i++){
+
+//     console.log("Hello "+i);
+
+//     if(i==3){
+//         break;
+//     }
+    
+// }
+
+
+let users=""
+//continue 
+
+
+// for(let i=0;i<10;i++){
+//     if(i==4){
+//         continue;
+//     }
+//     console.log("hello "+i)
+// }
+
+
+
+
+// let date=new Date();
+
+// console.log(date.toLocaleTimeString());
+// while
+// let f=0;
+// while(f<5){
+//   console.log("Hello "+Math.floor(Math.random()*200000));
+//  f++;
+//  }
+// let conf=confirm("do you want more ? ")
+
+//  while(conf){
+
+
+//     console.log("Hello "+Math.floor(Math.random()*200000))
+      
+//       conf=confirm("Are you sure; ");
+// }
+
+
+// do{
+
+// }while(condition)
+
+// let conf2=confirm("are you sure ? "); // false
+
+/* do{
+
+    console.log("Hello"+Math.floor(Math.random()*200000))
+
+    conf2=confirm("are you sure ? ");
+}while(conf2)
+*/
+
+
+// let UserName="Basem";
+// console.log(UserName.toLowerCase())
+// console.log(UserName[0]+UserName[4])
+// console.log(UserName[0]);
+// console.log(UserName[1]);
+// console.log(UserName[2]);
+// console.log(UserName[3]);
+// console.log(UserName[4]);
+
+// B
+// a
+// s
+// e
+// m
+
+
+
+
+
+
+// function CustomLength(text){
+// let lg=0;
+
+// let test=true
+// do{
+//     if(text[lg] !=undefined){
+//         lg++;
+       
+//     }else{
+//       test=false;
+//     }
+// }while(test)
+
+
+//     console.log(lg);
+// }
+
+
+
+// CustomLength("basem")
+
+
+
+// Lists []
+
+
+// let users2=["User1",2000,true,undefined,null,20.5,30>40,"User2","User3","User4"]
+// console.log(users2[users2.length-1])
+// console.log(users2[7][1]);
+
+// let uSername=["bassem"];
+// console.log(uSername[0][3])
+
+// CRUD  
+
+// let mutidimensionsarr=[]
+
+// 
+
+// let companies=[
+// ["test@gmail.com","test2@gmail.com","test3@gmail.com"],
+// ["test@gmail.com","test5@gmail.com","test3@gmail.com"],
+// ["test@gmail.com","test2@gmail.com","test3@gmail.com"]
+
+// ]
+
+// console.log(companies[1][1])
+
+// let str="hello";
+
+// console.log(str[str.length-1]);
+
+
+let emails = ["test@gmail.com","test5@gmail.com","test3@gmail.com"];
+
+
+
+// for( let i=0;i<emails.length;i++){
+//     console.log(emails[i]);
+    
+// }
+
+// for(let i in emails){
+//     console.log(emails[i]); // i =0 , 1 , 2 ...
+// }
+let names=["salim","hakim","brahim"];
+
+console.log(names);
+names[2]="karim"
+console.log(names);
+// new values 
+names[names.length]="Sara";
+names[names.length]="Khalid";
+console.log(names);
+// for(let i of names){
+//     console.log(i) // i =salim , hakim , ...
+// }
+
+
+
+let nums=[12,3,15,20,-33,2,17];
+
+let pairs=[];
+
+let Impairs=[];
+names[names.length]="Sara";
+let f=10;
+// if(f%2==0)
+// code
