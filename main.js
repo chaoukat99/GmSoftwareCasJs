@@ -508,7 +508,7 @@ let users=""
 // console.log(str[str.length-1]);
 
 
-let emails = ["test@gmail.com","test5@gmail.com","test3@gmail.com"];
+// let emails = ["test@gmail.com","test5@gmail.com","test3@gmail.com"];
 
 
 
@@ -520,27 +520,234 @@ let emails = ["test@gmail.com","test5@gmail.com","test3@gmail.com"];
 // for(let i in emails){
 //     console.log(emails[i]); // i =0 , 1 , 2 ...
 // }
-let names=["salim","hakim","brahim"];
+// let names=["salim","hakim","brahim"];
 
-console.log(names);
-names[2]="karim"
-console.log(names);
+// console.log(names);
+// names[2]="karim"
+// console.log(names);
 // new values 
-names[names.length]="Sara";
-names[names.length]="Khalid";
-console.log(names);
+// names[names.length]="Sara";
+// names[names.length]="Khalid";
+// console.log(names);
 // for(let i of names){
 //     console.log(i) // i =salim , hakim , ...
 // }
 
 
 
-let nums=[12,3,15,20,-33,2,17];
+// let nums=[12,3,15,20,-33,2,17];
 
-let pairs=[];
+// let pairs=[];
 
-let Impairs=[];
-names[names.length]="Sara";
-let f=10;
-// if(f%2==0)
-// code
+// let Impairs=[];
+// names[names.length]="Sara";
+// let f=10;
+
+
+
+// let arr2=["test1","test2","test3",29];
+
+// let str="";
+
+// for(let i of arr2){
+//     str=str+i+" "
+// }
+// console.log(str); // "test1 test2 test3"
+// console.log(arr2[0]+arr2[1]+arr2[2])
+
+
+
+// let names=["samir","salim","Karim","hamid","brahim","Karim","amir","hakim"];
+// let searchedValue=prompt("Insert the value : ");
+// let inc=0;
+
+
+// for(let i of names){
+//     if(i==searchedValue){
+
+//         inc+=1; // inc=inc+1;
+//     }
+// }
+
+// console.log(`le nom ${searchedValue} est répeté ${inc} fois`)
+
+
+
+// console.log("") // le nom samir se répéte 0 fois 
+
+
+
+// let f=false;
+// for(let i of names){
+//     if(i=="karim"){
+//        f=true;
+//     }
+// }
+
+
+// if(f){
+//     console.log("karim exist");
+    
+// }else{
+//     console.log("Karim does not exist");
+    
+// }
+
+
+
+// let str=prompt("insert a text");
+// let v=0;
+// for(let i=0;i<str.length;i++){
+//     if(str[i]=="a" || str[i]=="i" || str[i]=="e"  ){
+//        v++;
+//     }
+// }
+
+
+
+// console.log("V="+v);
+
+
+
+
+
+// methodes 
+
+
+// insert 
+// push
+
+// let nums=[1,2,3];
+// nums.push(100,23,24,"jdkjhqsdk");
+
+// nums.unshift(5,6,7)
+
+
+// for(let i of nums){
+//     console.log(i);
+// }
+
+
+
+// pop 
+
+// users=users.filter(el=>el!="user2"); HOF
+//  users.pop(); // supprime le dernier 
+// let deletedValue=users.pop();
+
+
+// console.log("Delete value "+deletedValue)
+// users.shift();  // supprime le premier 
+
+
+users=["user1","user2","user3"];
+// let search = prompt("insert a value");
+
+console.log(users.join(" "));
+// console.log(users)
+
+//  console.log(users);
+
+
+// f=0;
+
+// for(let i of users){
+//     if(i=="test"){
+//         f++
+//     }
+// }
+ 
+
+
+
+
+// let user =["mr","Samir"];
+// console.log(user.join(" "))
+
+let str="hello world";
+// str=str.replace("world","");
+// let strArr=str.split(" ")
+// strArr.pop();
+// console.log(strArr.join(" "))
+// console.log(str.split(" "));
+// console.log(str)
+
+
+
+
+let arr2=["test1","test2","test3","test4"];
+
+// let pos=arr2.indexOf("testttt")
+// arr2[pos]="wiam"
+// console.log(pos)
+// let newStr=arr2.join(" ");
+// newStr=newStr.replace("test2","Wiam");
+
+// console.log(newStr.split(" "));
+// arr2[1]="WIAM";
+
+// console.log(arr2);
+
+
+let arr1=[20,30,40];
+let arr3=[50,60,70];
+
+// let newArr2=arr1.concat(arr3,arr2);
+
+// console.log(newArr2)
+
+
+
+// push (insert f lekher)
+// pop (delete f lekher)
+// unshift(insert f luwel )
+// includes (check if exist true / false )
+// shift (delete f luwel)
+// join   (['f','d','s'].join(" ") // 'f d s' ktjm3hom)
+//indexOf("text") // ktjib lik la position dial le texte
+//concat // ktjma3 les valeurs dial les tableaux
+
+  
+
+let userss=["hello","world"];
+
+// prompt Menu 
+// 1-Lister les élements
+// 2-insert new element 
+// 3-Update element
+// 4-delete element
+// 5-Exit 
+
+
+// 1- Prompt 
+// let option =prompt("Menu:\n1-Lister les élément\n2-...")
+
+//  Do while
+
+     // -switch case 
+
+
+
+    //  1 - 
+
+
+    let times=prompt("combien d'élement ")
+
+
+    for(let i=0;i<times;i++){
+        valueToInsert=prompt("Insert the value number "+(i+1))
+        userss.push(valueToInsert);
+    }
+
+
+    console.log("new array : "+userss)
+
+
+    // 1-Lister
+
+    // for(let i of userss){
+    //     console.log(i);
+    // }
+
+
+    // 3- 
