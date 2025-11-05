@@ -643,7 +643,7 @@ let users=""
 users=["user1","user2","user3"];
 // let search = prompt("insert a value");
 
-console.log(users.join(" "));
+// console.log(users.join(" "));
 // console.log(users)
 
 //  console.log(users);
@@ -875,101 +875,185 @@ let products =[];
 // console.log(tab)
 // console.log(tab.split(" "))
 
-let stop=true;
+// let stop=true;
 
-do{
-    let Text=`Menu\n1- show products \n2- Insert product\n3- Update product \n4- Delete Product\n5- Exit `
+// do{
+//     let Text=`Menu\n1- show products \n2- Insert product\n3- Update product \n4- Delete Product\n5- Exit `
 
-// Inputs 
-    let promptMenu=prompt(Text);
-    if(promptMenu!=null){
+// // Inputs 
+//     let promptMenu=prompt(Text);
+//     if(promptMenu!=null){
 
-        switch(promptMenu){
-            case "1":{
-                // show
-                if(products.length>0){
+//         switch(promptMenu){
+//             case "1":{
+//                 // show
+//                 if(products.length>0){
     
-                    alert(products.join("---"))
-                }else{
-                    alert("No data")
-                }
+//                     alert(products.join("---"))
+//                 }else{
+//                     alert("No data")
+//                 }
         
-            }break;
-            case "2":{
-                // insert
-                let newProduct=prompt("Insert the new Product");
-        
-        
-                     if(newProduct!=null && newProduct.length>3){  
-        
-                          products.push(newProduct);
-                          console.log(products);
-                     }else{
-                        alert("Sorry try to insert a real product ");
-                        }
-        
-            }break;
-        
-            case "3":{
-                // update 
-        
-                let old=prompt("insert the value to update ?");
+//             }break;
+//             case "2":{
+//                 // insert
+//                 let newProduct=prompt("Insert the new Product");
         
         
-                   if(products.includes(old)){
-            // Update 
+//                      if(newProduct!=null && newProduct.length>3){  
         
-            // get position / index 
-                  let index=products.indexOf(old);
-            // get new value;
-                  let newValue=prompt("Insert the new Value :");
+//                           products.push(newProduct);
+//                           console.log(products);
+//                      }else{
+//                         alert("Sorry try to insert a real product ");
+//                         }
         
-            // Update
-                  products[index]=newValue;
-                  alert("Product Updated");
+//             }break;
+        
+//             case "3":{
+//                 // update 
+        
+//                 let old=prompt("insert the value to update ?");
+        
+        
+//                    if(products.includes(old)){
+//             // Update 
+        
+//             // get position / index 
+//                   let index=products.indexOf(old);
+//             // get new value;
+//                   let newValue=prompt("Insert the new Value :");
+        
+//             // Update
+//                   products[index]=newValue;
+//                   alert("Product Updated");
             
         
-                }else{
-                         alert("Unfound Product");
-                      }
-            }break;
-            case "4":{
-                // delete 
-         let valueToDelete=prompt("Insert the value to delete");
+//                 }else{
+//                          alert("Unfound Product");
+//                       }
+//             }break;
+//             case "4":{
+//                 // delete 
+//          let valueToDelete=prompt("Insert the value to delete");
         
-        if(products.includes(valueToDelete)){
-            // Delete
+//         if(products.includes(valueToDelete)){
+//             // Delete
         
-          for(let i of products){
-            if(i!=valueToDelete){
-                newArr.push(i);
-            }
-          }
+//           for(let i of products){
+//             if(i!=valueToDelete){
+//                 newArr.push(i);
+//             }
+//           }
         
-          products=newArr;
+//           products=newArr;
         
-          console.log(products);
+//           console.log(products);
         
         
          
         
-        }else{
-            alert("Insert a valid value ");
-        }
+//         }else{
+//             alert("Insert a valid value ");
+//         }
         
         
         
-            }break;
+//             }break;
         
-            case "5":{
-                stop=false;
-                alert("BY BY ")
-            }
-        }
-    }else{
-        stop=false;
-    }
-}while(stop)
+//             case "5":{
+//                 stop=false;
+//                 alert("BY BY ")
+//             }
+//         }
+//     }else{
+//         stop=false;
+//     }
+// }while(stop)
 
 
 
+
+// Math Object 
+
+
+// let number=25;
+// console.log(Math.sqrt(number));
+
+
+
+
+// const PI=Math.PI;
+// console.log(PI);
+
+// ceil / floor
+// let num=20.4;
+// console.log(Math.round(num))
+
+
+// console.log(Math.max(12,20,5,-10,-30))
+// console.log(Math.min(12,20,5,-10,-30))
+
+let numss=[20,12,23,5,8,1,-5];
+
+// console.log(Math.max(...numss));
+
+// let name=["samir","hajib"];
+
+// let newArr2=[...name,"salim","brahim"]
+
+// console.log(newArr2)
+
+
+
+
+// let arrr=[["one"],["three"]];
+// // let val=prompt("insert a ne w value");
+
+// arrr=[...arrr,["he","llo"]];
+
+// console.log(arrr)
+
+
+
+
+
+
+
+// console.log(Math.tan(0))
+
+// console.log(Math.sin(0)/Math.cos(0))
+
+
+// RANDOM
+// let randomNumber=Math.floor(Math.random()*100000000);
+
+// console.log(randomNumber)
+
+
+// let rand=
+
+// console.log(_.random(, 9000));
+// Guess a number 
+
+
+// let  entry=prompt("Insert A number between 0 and 5");
+// let computerNumber=_.random(0,5);
+
+// if(entry==computerNumber){
+//     alert(`You win because computer choose ${computerNumber}`)
+// }else{
+//     alert(`You lost because the computer choose ${computerNumber}`);
+// }
+
+
+let choices =["👊","🖐️","✌️"]
+
+// let userchoice=prompt("Choose (✌️,👊,🖐️)");
+
+
+let computerChoice=_.random(0,2);
+
+console.log(choices[computerChoice])
+
+// Conditions 
