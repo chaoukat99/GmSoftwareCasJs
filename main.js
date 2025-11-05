@@ -731,16 +731,16 @@ let userss=["hello","world"];
     //  1 - 
 
 
-    let times=prompt("combien d'élement ")
+    // let times=prompt("combien d'élement ")
 
 
-    for(let i=0;i<times;i++){
-        valueToInsert=prompt("Insert the value number "+(i+1))
-        userss.push(valueToInsert);
-    }
+    // for(let i=0;i<times;i++){
+    //     valueToInsert=prompt("Insert the value number "+(i+1))
+    //     userss.push(valueToInsert);
+    // }
 
 
-    console.log("new array : "+userss)
+    // console.log("new array : "+userss)
 
 
     // 1-Lister
@@ -751,3 +751,225 @@ let userss=["hello","world"];
 
 
     // 3- 
+
+let newArr=[];
+
+// MENU
+let products =[];
+
+
+// Afficher un menu 
+
+
+// CRUD
+
+
+
+// 1- Inputs 
+// 2-Traitement 
+// 3- Output 
+
+
+
+// 1- show products 
+
+
+// for(let i of products){
+//     console.log(i);
+    
+// }
+
+
+
+
+// Join 
+
+// console.log(products.join("---"))
+
+
+
+// Insert Product
+// let newProduct=prompt("Insert the new Product");
+
+
+//     if(newProduct!=null && newProduct.length>3){  
+
+//     products.push(newProduct);
+//     console.log(products);
+// }else{
+//     alert("Sorry try to insert a real product ");
+// }
+
+
+
+
+// Update
+
+// 1-get the old product
+
+// 2- get the new product value
+// 3- update 
+
+
+
+
+// let old=prompt("insert the value to update ?");
+
+
+// if(products.includes(old)){
+//     // Update 
+
+//     // get position / index 
+//     let index=products.indexOf(old);
+//     // get new value;
+//     let newValue=prompt("Insert the new Value :");
+
+//     // Update
+//     products[index]=newValue;
+//     alert("Product Updated");
+    
+
+// }else{
+//     alert("Unfound Product");
+// }
+
+
+// const tab=['1',"3",'10'];
+
+// tab[2]="Test"//
+
+
+
+
+
+// Delete
+
+// let valueToDelete=prompt("Insert the value to delete");
+
+// if(products.includes(valueToDelete)){
+//     // Delete
+
+//     products=products.join(" ").replace(" "+valueToDelete," ").split("  ");
+//     console.log(products);
+
+
+ 
+
+// }else{
+//     alert("Insert a valid value ");
+// }
+
+
+
+
+
+// let tab=["hello","world","web"];
+// console.log(tab)
+// tab=tab.filter(el=>el!="hello");
+// console.log(tab)
+
+// tab=tab.join(" ");
+
+// console.log
+//  tab=tab.replace("world ","");
+// console.log(tab)
+// console.log(tab.split(" "))
+
+let stop=true;
+
+do{
+    let Text=`Menu\n1- show products \n2- Insert product\n3- Update product \n4- Delete Product\n5- Exit `
+
+// Inputs 
+    let promptMenu=prompt(Text);
+    if(promptMenu!=null){
+
+        switch(promptMenu){
+            case "1":{
+                // show
+                if(products.length>0){
+    
+                    alert(products.join("---"))
+                }else{
+                    alert("No data")
+                }
+        
+            }break;
+            case "2":{
+                // insert
+                let newProduct=prompt("Insert the new Product");
+        
+        
+                     if(newProduct!=null && newProduct.length>3){  
+        
+                          products.push(newProduct);
+                          console.log(products);
+                     }else{
+                        alert("Sorry try to insert a real product ");
+                        }
+        
+            }break;
+        
+            case "3":{
+                // update 
+        
+                let old=prompt("insert the value to update ?");
+        
+        
+                   if(products.includes(old)){
+            // Update 
+        
+            // get position / index 
+                  let index=products.indexOf(old);
+            // get new value;
+                  let newValue=prompt("Insert the new Value :");
+        
+            // Update
+                  products[index]=newValue;
+                  alert("Product Updated");
+            
+        
+                }else{
+                         alert("Unfound Product");
+                      }
+            }break;
+            case "4":{
+                // delete 
+         let valueToDelete=prompt("Insert the value to delete");
+        
+        if(products.includes(valueToDelete)){
+            // Delete
+        
+          for(let i of products){
+            if(i!=valueToDelete){
+                newArr.push(i);
+            }
+          }
+        
+          products=newArr;
+        
+          console.log(products);
+        
+        
+         
+        
+        }else{
+            alert("Insert a valid value ");
+        }
+        
+        
+        
+            }break;
+        
+            case "5":{
+                stop=false;
+                alert("BY BY ")
+            }
+        }
+    }else{
+        stop=false;
+    }
+}while(stop)
+
+
+
