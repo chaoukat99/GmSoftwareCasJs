@@ -347,7 +347,7 @@ let day="2";
 // }
 // i=0 0<5 i=0+1=1
 
-// i=2 2<5 i=2+1= 3
+// i=2 2<5 i=2+1=1
 
 // i=3 3<3 i=2+1 =3
 // i=3 3<5 i=3+1=4
@@ -594,7 +594,6 @@ let users=""
 // }
 
 
-
 // let str=prompt("insert a text");
 // let v=0;
 // for(let i=0;i<str.length;i++){
@@ -602,7 +601,6 @@ let users=""
 //        v++;
 //     }
 // }
-
 
 
 // console.log("V="+v);
@@ -1047,13 +1045,102 @@ let numss=[20,12,23,5,8,1,-5];
 // }
 
 
-let choices =["👊","🖐️","✌️"]
+// let choices =["👊","🖐️","✌️"]
 
 // let userchoice=prompt("Choose (✌️,👊,🖐️)");
 
 
-let computerChoice=_.random(0,2);
+// let computerChoice=_.random(0,2) ;
 
-console.log(choices[computerChoice])
+// console.log(choices[computerChoice]); 
 
 // Conditions 
+
+
+
+// 
+
+
+let Str="azertyuiopqsdfghjklwxcvbnAZERTYUIOPQSDFGHJKLWXCVBN01234567890!@é-(✌️👊🥲😂)èçè_à=+"
+
+
+// console.log(Str.length)
+// let password="";
+
+
+// let lengthPass=prompt("Insert the password length");
+// let random;
+
+// for(let i=0;i<lengthPass;i++){
+
+
+//     // 1- generate random value ;
+//    random=_.random(0,Str.length-1);
+//    password=password+Str[random];
+    
+// }
+// console.log("The password is : "+password)
+
+
+let myText="hello-world@yahoo.com";
+
+// console.log(myText.toLowerCase());
+// console.log(myText.toUpperCase());
+// console.log(myText.repeat(20))
+// console.log(----"".repeat(20))
+// console.log(myText.includes("h",1))
+// console.log(myText.replace("l","f"))
+// console.log(myText.replaceAll("l","f"))
+
+
+// console.log(myText.replaceAll("h","f"));
+// console.log(myText);
+// mutable
+// immutable
+
+
+// let tab=["one","two","three"];
+// tab[1]="hello";
+
+// console.log(tab);
+
+// let myStr="hello";
+// myStr[1]="f";
+// console.log(myStr)
+
+// let password="      test123     ";
+// console.log(password.trim()) // remove spaces
+
+
+// startsWith
+
+// console.log(myText.startsWith(""))
+
+// endsWith
+
+// console.log(myText.endsWith("yahoo.com"))
+
+let url="https://www.google.com"
+
+
+// console.log(url.split(":")[0])
+
+// console.log(url.slice(12,18))
+// console.log(url.substring(12,18))
+
+let emailList = [
+    "john.doe@gmail.com",
+    "sarah.smith@hotmail.com",
+    "mike.wilson@outlook.com",
+    "emma.brown@yahoo.com",
+    "alex.johnson@gmail.com",
+    "lisa.davis@hotmail.com",
+    "david.miller@outlook.com",
+    "julia.taylor@yahoo.com",
+    "robert.anderson@gmail.com",
+    "mary.wilson@hotmail.com"
+];
+
+
+
+
