@@ -1127,7 +1127,7 @@ let url="https://www.google.com"
 
 // console.log(url.slice(12,18))
 // console.log(url.substring(12,18))
-
+let filteredEmails=[];
 let emailList = [
     "john.doe@gmail.com",
     "sarah.smith@hotmail.com",
@@ -1143,4 +1143,93 @@ let emailList = [
 
 
 
+// for(let i of emailList){
+//     if(i.endsWith("gmail.com")){
+//         filteredEmails.push(i);
+//     }
+// }
 
+
+
+// filteredEmails=emailList.filter(el=>el.endsWith("yahoo.com"))
+// console.log(filteredEmails)
+
+
+
+
+// Object {k:v}
+
+
+
+// attributes
+
+
+let arr=[];
+
+let student={
+    id:1,
+    name:"karim alaoui",
+    age:26,
+    gender:"male",
+    notes:[12,13,15,20],
+    is_connected:false,
+    adresse:{
+        city:"Casa",
+        country:"Morocco"
+    }
+}
+
+// console.log(student.is_connected)
+// console.log(student);
+
+
+// student.age=20
+// student.adresse.city="Rabat"
+// Updtae 
+
+
+// DELETE
+
+
+// delete student.notes;
+// delete student.name;
+// delete student.gender;
+
+// console.log(student);
+
+
+
+// fetch("https://jsonplaceholder.typicode.com/photos",{method:"GET"})
+// .then(res=>res.json())
+// .then(data=>document.write("<h1>"+data[0].title+"</h1>"));
+
+
+// let tab=["jhdj","jsdhjs"];
+
+// let usersss=[
+//     {
+//         id:1,
+//         firstname:"salim",
+//         lastname:"salimi",
+//         email:"salim@gmail.com",
+//         password:"samir123"
+//     },
+//     {
+//         id:2,
+//         firstname:"salim2",
+//         lastname:"karim",
+//         email:"salim@gmail.com",
+//         password:"samidddr123"
+//     },
+//     {
+//         id:3,
+//         firstname:"salim3",
+//         lastname:"khadija",
+//         email:"salim@gmaiL.com",
+//         password:"samir1234"
+//     },
+// ]
+
+// for(let i of usersss){
+// console.log(i.firstname+" "+i.lastname)
+// }
