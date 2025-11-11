@@ -1267,21 +1267,107 @@
 
 
 // 10 dummy products array
+let prices=[];
 const products = [
   { id: 1, name: "Smartphone", price: 499.99, category: "Electronics", stock: 25 },
   { id: 2, name: "Bluetooth Speaker", price: 59.99, category: "Electronics", stock: 40 },
   { id: 3, name: "Coffee Mug", price: 9.99, category: "Kitchen", stock: 100 },
   { id: 4, name: "Desk Organizer", price: 19.99, category: "Office", stock: 60 },
-  { id: 5, name: "Running Shoes", price: 89.99, category: "Sportswear", stock: 30 },
+  { id: 5, name: "Running Shoes", price: 890.99, category: "Sportswear", stock: 30 },
   { id: 6, name: "Wireless Mouse", price: 29.99, category: "Electronics", stock: 50 },
   { id: 7, name: "Water Bottle", price: 14.99, category: "Sportswear", stock: 80 },
-  { id: 8, name: "Notebook", price: 5.99, category: "Office", stock: 120 },
+  { id: 8, name: "Notebook", price: 5.99, category: "Office", stock: 0 },
   { id: 9, name: "LED Desk Lamp", price: 39.99, category: "Office", stock: 35 },
   { id: 10, name: "Yoga Mat", price: 24.99, category: "Sportswear", stock: 45 }
 ];
 
 
+// for(let i of products){
+     // prices.push(i.price)
+// }
+
+// console.log(prices);
+
+// let winningProduct=products.find(el=>el.price==Math.max(...products.map(el=>el.price)))
+// console.log(winningProduct)
+// let maxProduct=Math.min(...prices);
+// let maxP=null;
+// for(let i of products){
+// if(i.price==maxProduct){
+// maxP=i
+// }
+// }
+
+
+
+// console.log("le Produit le plus  rentable est : "+JSON.stringify(maxP))
+
 // search a product 
 
 
+// let ProductName=prompt("Insert the name of the product");
+
+// let obj=null;
+
+
+// // for(let i of products){
+// //     if(ProductName!==null && ProductName.toLowerCase()===i.name.toLowerCase()){
+// //         obj=i;
+// //         break;
+// //     }
+// // }
+
+// condition?true:false
+
+// if(obj!=null){
+//    console.log(`Id : ${obj.id}\nName: ${obj.name}\nCategory: ${obj.category}\nPrice: ${obj.price}\nStock: ${obj.stock>0?"Disponible":"Out of stock"} `);
+// }else{
+//      console.log("Unfound Product");
+// }
+
+
 // 
+
+
+// let f1="hello";
+// let f2="world";
+// console.log(`${f1} skhdskhds ${f2}`)
+
+
+// console.log("text".toLocaleLowerCase)
+
+
+
+
+
+//    
+
+
+// functions vs Procedures 
+
+// declaration et implementation
+
+// appel / call 
+
+
+// function SendEmail(){
+//     // logic
+// }
+
+
+
+function sayHi(user="User"){
+    console.log("Hello "+user);
+}
+
+
+let s="hello"
+sayHi("Omar");
+sayHi("Hamza")
+
+
+
+
+
+
+sayHi();
