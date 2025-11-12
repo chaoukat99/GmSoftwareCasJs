@@ -1356,18 +1356,302 @@ const products = [
 
 
 
-function sayHi(user="User"){
-    console.log("Hello "+user);
+// function sayHi(user="User"){
+//     console.log("Hello "+user);
+// }
+
+
+// let s="hello"
+// sayHi("Omar");
+// sayHi("Hamza")
+
+
+
+
+
+
+// sayHi();
+
+
+
+let date= new Date();
+
+// let currentHour=date.getMinutes();
+
+// console.log(date.getSeconds());
+
+// if(currentHour>=18 && currentHour<=23){
+//   console.log("Promo")
+// }else{
+//   console.log("Fi9 bkri");
+  
+// }
+// currentHour>=18 && currentHour<=23?console.log("Promo"):console.log("Fi9")
+
+// let str="hello";
+
+// let str2= new String("hello");
+
+
+// console.log(str2.valueOf())
+
+
+
+// console.log(date.getDate()+"-"+date.getMonth()+"-"+date.getFullYear())
+
+
+console.log(date.toLocaleDateString()+" "+date.toLocaleTimeString())
+
+
+// console.log(date.toLocaleTimeString());
+
+
+// let student={
+//   id:_.random(0,99999999),
+//   name:"Samir",
+//   age:29,
+//   createdAt:date.toLocaleDateString()+" "+date.toLocaleTimeString()
+// }
+
+
+// console.log(student)
+
+
+
+// functions vs procedures 
+
+
+
+// 
+
+// 1- declaration et implementration
+
+// function Addition(){
+//   // traitement
+//   let result = 10+20;
+
+
+//   // return 
+//   return result;
+// }
+
+
+// // call 
+// // console.log(res)
+
+
+
+
+// function Addition2(){
+//   // traitement
+//   let result = 10+20;
+
+
+//   // return 
+//   console.log(result);
+// }
+
+// let res2=Addition2();
+
+// console.log(res2)
+
+
+
+
+
+// console.log(result);
+
+
+
+
+// 2-call /
+
+
+
+
+
+
+
+
+// function SayHello(){
+//   return 10>20;
+// }
+// function SayHello2(){
+//   console.log("Hello");
+  
+// }
+
+// let newValue=SayHello();
+
+
+// console.log(newValue)
+// console.log(SayHello())
+
+
+// SayHello2();
+
+
+// let a=10;
+// let b=20;
+// let c=a+b;
+// console.log(c);
+
+
+
+// let d=30;
+// let e=50;
+// let f=d+e ;
+// console.log(f);
+// Addition(10,20);
+// Addition(50,60);
+
+// Rest operator
+
+// function Addition(...params){
+//  let somme=0;
+//  for(let i of params){
+//   somme=somme+i;
+//  }
+
+//  console.log(somme)
+// }
+
+// Addition(10,20,6,10);
+// console.log(Addition(1,2))
+
+
+// function ListUsers(arr){
+//   for(let i of arr){
+//     console.log(i)
+//   }
+// }
+
+
+// ListUsers(["hello","world"]);
+// ListUsers(["test1","test2"]);
+
+
+// f(x)=x+1;
+
+// x=1;
+// f(1)=1+1;
+function Addition(num1,num2){
+return num1+num2;
+}
+
+// Soustraction -
+function Soustraction(num1,num2){
+ return num1-num2;
+}
+
+// multiplication *
+
+function multiplication(num1,num2){
+  return num1*num2
+}
+
+// Division /
+function Division(num1,num2){
+  return num2!=0?num1/num2:"impossible" ;
 }
 
 
-let s="hello"
-sayHi("Omar");
-sayHi("Hamza")
+// console.log(Division(25,0))
+// console.log(Addition(1,3,5));
+// console.log(Addition(1,3));
 
 
 
 
 
 
-sayHi();
+function getUser(name){
+  return "salam si "+name;
+}
+
+
+
+// function sayHiToUser(){
+//   return "Salam "+getUser("hamid");
+// }
+
+
+// console.log(sayHiToUser())
+
+// let users=["salim","karim","hakim"];
+
+
+
+// for(let i of users){
+//   console.log(getUser(i));
+// }
+
+
+// let order={
+//   id:1,
+//   libelle:"libelle",
+//   products:[
+//     {
+//       id:1,
+//       name:"tv",
+//       price:300,
+//       qte:3
+//     },
+//     {
+//       id:1,
+//       name:"tv",
+//       price:300,
+//       qte:1
+//     },
+//   ],
+
+//   client:{
+//     id:1,
+
+//   },
+//   checkout:{
+//          city:"",
+//          country:"",
+//          email:"skjk" 
+//   },
+//   status:"completed"
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
