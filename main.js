@@ -1623,17 +1623,39 @@ function getUser(name){
 
 
 
+// Named Function
+
+function Name(){
+  // traitement 
+}
+
+
+// Anonymous Function
+// let anonyme=function(name){
+//   console.log("hello world ");
+// }
+
+// Arrow Function
+
+
+// let arrowFun=()=>{
+// console.log("hello world");
+// }
+
+
+
+
+anonyme();
 
 
 
 
 
+let arr =[1,2,3];
 
+let arr2=[4,5,6];
 
-
-
-
-
+// let arr3=[...arr,...arr2]
 
 
 
