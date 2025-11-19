@@ -10,6 +10,10 @@
     <style>
        .active{
     color: green;}
+
+    td{
+    padding: 10px;
+    }
     </style>
 </head>
 <body>
@@ -119,7 +123,7 @@ This is navbar
 
 <a href="">Youtube</a>
 
-
+<!--
 <form action="">
     <input type="text" name="username">
     <input type="email" name="email">
@@ -127,6 +131,28 @@ This is navbar
     <br>
     <button>Send</button>
 </form>
+-->
+<input type="text">
+<button>Click</button>
+<p >this is test p</p>
+<hr>
+<label for="">product</label><br>
+<input type="number" name="" id="">
+<button>Ajouter le PRoduit</button>
+
+<hr>
+<button>Afficher le montant HT</button>
+<button>Afficher le montant de la TVA</button>
+<button>Afficher le total TTC</button>
+
+<table style="width: 500px;border:solid 1px red;border-collapse:collapse">
+    <tr >
+        <td>Montant HT  : <span id="HT"></span> </td>
+        <td>Montant Tva : <span id="Tva"></span>  </td>
+        <td>Total TTc   : <span id="total"></span></td>
+    </tr>
+
+</table>
 
 <script src="./dom.js"></script>
 </body>

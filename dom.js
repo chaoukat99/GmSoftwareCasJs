@@ -375,3 +375,26 @@ let forms = document.forms;
 // console.log(myForm.age)
 
 // 
+
+
+// let inputs=document.querySelectorAll("input");
+
+// for(let i of inputs){
+//     i.required=true;
+// }
+
+
+
+let p=document.querySelector("p");
+
+let inpText=document.querySelector("input")
+// element.onclick=()=>{ code a executer   }
+
+let btn=document.querySelector("button");
+
+btn.onclick=()=>{
+    p.innerHTML=inpText.value;
+}
+
+
+console.log()
