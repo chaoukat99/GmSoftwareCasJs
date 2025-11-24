@@ -397,4 +397,90 @@ btn.onclick=()=>{
 }
 
 
-console.log()
+// console.log()
+
+let montant=[];
+// 
+
+ btn = document.querySelector("#add");
+let inputNum=document.querySelector("input[type='number']")
+
+let htSpan=document.querySelector("#HT");
+let htBtn=document.querySelector("#btnHt");
+let tvaBtn=document.querySelector("#tvaBtn");
+let tvaSpan=document.querySelector("#Tva");
+
+let ttcBtn=document.querySelector("#ttcBtn");
+let spanTtc=document.querySelector("#total")
+
+
+let allBtn=document.querySelector("#allBtn");
+
+btn.onclick=()=>{
+    if(inputNum.value.length==0){
+        alert("Fill the input")
+    }else{
+
+        montant.push(inputNum.value);
+        inputNum.value="";
+        console.log(montant);
+    }
+}
+
+htBtn.onclick=()=>{
+    htSpan.innerHTML=DisplayHt()
+}
+
+
+
+tvaBtn.onclick=()=>{
+    tvaSpan.innerHTML=Tax();
+}
+
+
+
+ttcBtn.onclick=()=>{
+    spanTtc.innerHTML=TTC();
+}
+
+
+
+allBtn.onclick=()=>{
+    htSpan.innerHTML=DisplayHt();
+    tvaSpan.innerHTML=Tax();
+    spanTtc.innerHTML=TTC();
+    print();
+}
+function DisplayHt(){
+
+    // Sum
+    let somme=0;
+
+    for(let i of montant){
+        somme=somme+(+i);
+    }
+
+
+   return somme;
+
+     
+}
+
+
+
+
+function Tax(){
+    const tauxTva=0.2;
+
+    let TvaAmount=DisplayHt()*tauxTva;
+    return TvaAmount
+}
+
+
+
+function TTC(){
+    
+    return DisplayHt()+Tax();
+}
+
+
