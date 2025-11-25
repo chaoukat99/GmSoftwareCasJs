@@ -237,17 +237,83 @@ let form=document.forms[0]
 // password [10-12]
 // confirm password equal to password
 
-form.addEventListener("submit",(ev)=>{
-    ev.preventDefault();//block event
+// form.addEventListener("submit",(ev)=>{
+//     ev.preventDefault();//block event
     
- 
-    if(form.email.value.includes("@")){
-        console.log("Good job")
-        form.submit();
-    }else{
-        console.log("sorry you can't submit ")
-    }
+//  let errors=[];
+//   let fullnameTest=false;
+//   let emailTest=false;
+//   let passwordTest=false;
+//   let confirmTest=false;
+
+//   if(form.fullname.value.length>=8 && form.fullname.value.length<=14){
+//     fullnameTest=true;
+//   }else{
+//      errors.push("Fullname Invalid")
+//   }
+
+//   if(form.email.value.startsWith(form.fullname.value) && form.email.value.includes("@")){
+//     emailTest=true;
+//   }else{
+//     errors.push("Email Invalid")
+//   }
 
 
 
-}) 
+//   if(form.password.value.length>=10 && form.password.value.length<=12){
+//     passwordTest=true;
+//   }else{
+//     errors.push("Password Invalid")
+//   }
+
+
+
+//   if(form.confirmpassword.value==form.password.value){
+//     confirmTest=true
+//   }else{
+//     errors.push("ConfirmationInvalid");
+//   }
+
+
+
+// //   final condition
+// if(fullnameTest && emailTest && passwordTest && confirmTest){
+//     form.submit();
+// }else{
+//     alert(errors.join(" || "));
+// }
+
+
+// }) 
+
+
+
+
+// const passwordRegex = /^(?=.*[a-z])(?=.*[A-C])(?=.*[0-9])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{5,10}$/;
+
+// console.log(passwordRegex.test("Bmar1213@"))
+
+
+
+
+
+
+// Create Elements 
+
+let madiv=document.createElement("div");
+let p=document.createElement("p");
+p.innerHTML="this is Para test ";
+let button=document.createElement("button")
+button.innerHTML="Click here "
+
+
+
+
+madiv.classList.add("cls2");
+madiv.style.background="red";
+madiv.innerHTML="This a js div";
+madiv.append(p);
+madiv.append(button);
+document.body.append(madiv)
+
+document.body.remove();
