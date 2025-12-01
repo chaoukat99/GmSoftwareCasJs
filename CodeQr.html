@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr code </title>
+
+</head>
+<body>
+    <label for="">Qr COde data </label>
+    <br>
+
+    <input type="text" name="" id="">
+    <br>
+    <button>Generate</button>
+    <div class="link"></div>
+
+<div id="qrcode"></div>
+<script src="./Qr.js"></script>
+<script>
+ function GenerateQrCode(data){
+      new QRCode(document.getElementById("qrcode"), data);
+
+}
+
+let btn = document.querySelector("button");
+let input=document.querySelector("input");
+btn.onclick=()=>{
+GenerateQrCode(input.value);
+
+setTimeout(()=>{
+    let img=document.querySelector("img");
+    let link = document.createElement("a");
+    link.innerHTML="Download";
+    link.href=img.src;
+    link.download="QrCode";
+    document.querySelector(".link").append(link);
+},100)
+
+
+}
+</script>
+</body>
+</html>

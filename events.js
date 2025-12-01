@@ -300,20 +300,27 @@ let form=document.forms[0]
 
 // Create Elements 
 
-let madiv=document.createElement("div");
-let p=document.createElement("p");
-p.innerHTML="this is Para test ";
-let button=document.createElement("button")
-button.innerHTML="Click here "
+// let madiv=document.createElement("div");
+// let p=document.createElement("p");
+// p.innerHTML="this is Para test ";
+// let button=document.createElement("button")
+// button.innerHTML="Click here "
 
 
 
 
-madiv.classList.add("cls2");
-madiv.style.background="red";
-madiv.innerHTML="This a js div";
-madiv.append(p);
-madiv.append(button);
-document.body.append(madiv)
+// madiv.classList.add("cls2");
+// madiv.style.background="red";
+// madiv.innerHTML="This a js div";
+// madiv.append(p);
+// madiv.append(button);
+// document.body.append(madiv)
 
-document.body.remove();
+// document.body.remove();
+
+
+
+
+
+
+
