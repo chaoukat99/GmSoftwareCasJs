@@ -198,14 +198,14 @@ let quiz=[
         correctAnswer:"Hypertext Markup language"
     },
     {
-        question:"HTML Stands for ?",
-        answers:["Hypertext model language","Hypertext Markup language","kjdhjs"],
-        correctAnswer:"Hypertext Markup language"
+        question:"Css sTANDS FOR ",
+        answers:["C#","Cascading style sheet","Test"],
+        correctAnswer:"Cascading style sheet"
     },
     {
-        question:"HTML Stands for ?",
-        answers:["Hypertext model language","Hypertext Markup language","kjdhjs"],
-        correctAnswer:"Hypertext Markup language"
+        question:"JS stands for ",
+        answers:["Javascript","Java","Python"],
+        correctAnswer:"Javascript"
     },
 ]
 
@@ -213,6 +213,52 @@ let quiz=[
 let btns=document.querySelectorAll("button");
 
 let span=document.querySelector("span")
-btns[0].onclick=()=>{
-   span.innerHTML=quiz[0].question;
+
+let score=0;
+function Calculate(correctAnswer){
+    let divs=document.querySelectorAll(".cls");
+for(let i of divs){
+    i.onclick=()=>{
+       if(correctAnswer==i.innerHTML){
+        ++score;
+        localStorage.setItem("score",+localStorage.getItem("score")+1)
+
+       }
+       document.querySelectorAll("button")[1].click();
+    }
 }
+}
+function NextQuestion(Pos){
+     span.innerHTML=quiz[Pos].question;
+   answers="";
+   let correctAnswer=quiz[Pos].correctAnswer;
+   for(let i of quiz[Pos].answers){
+    answers+=`<div class='cls'>${i}</div>`
+}
+document.querySelector(".answers").innerHTML=answers;
+// check answer calculate score
+Calculate(correctAnswer);
+
+}
+i=-1;
+
+
+
+btns[1].onclick=()=>{
+    if(i==2){
+        alert("Votre Score est "+score+"/3")
+    }
+    i++ ;
+  NextQuestion(i);
+
+
+
+}
+
+
+
+
+
+
+
+
