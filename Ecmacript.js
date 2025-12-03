@@ -216,3 +216,27 @@ const products = [
 
 
 
+
+
+
+// search a product By Name 
+
+
+
+// filter  products By category 
+
+// filter products By Prices [150-200]
+
+
+// Get  porducts with the max Rating
+
+
+
+// Transform Product to this 
+// <div>
+        // <h2>Name : TV</h2>
+        // <h3>Price : 200 $</h3>
+        // <span>Category : Electronics </span>
+        // <span>Rating : 4.5/5</span>
+        // <span>Disponible Or Out of Stock</span>
+// </div>
