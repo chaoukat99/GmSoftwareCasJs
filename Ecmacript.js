@@ -1,135 +1,135 @@
 
-let arr=["samir","karim","ibrahim","sami"];
+// let arr=["samir","karim","ibrahim","sami"];
 
-let [user1,user2,...user3]=arr;
+// let [user1,user2,...user3]=arr;
 
-let user={
-    email:"omar@gmail.com",
-    password:"pass123"
-}
-
-
-let {email,password2}=user;
-console.log(password2)
-// let email=user.email;
-// let password=user.password;
-
-console.log(user3);
-// let user1=arr[0]
-// let user2=arr[1]
-// let user3=arr[2]
-
-
-// Arrays
-
-// arr.hof((el,index)=>)
-
-
-
-// find (Search)
-
-let users=[
-    {
-        id:1,
-        name:"Samir",
-        age:48,
-        profession:"Web developer"
-    },
-    {
-        id:2,
-        name:"Sara",
-        age:22,
-        profession:"Web Marketer"
-    },
-    {
-        id:3,
-        name:"Ibrahim",
-        age:30,
-        profession:"Graphic Designer"
-    },
-    {
-        id:3,
-        name:"Karim",
-        age:30,
-        profession:"Graphic Designer"
-    },
-]
-
-
-// let UserSearch=users.find((el,i)=>el.name.startsWith("Iphone"));
-// console.log(UserSearch);
-
-
-// HOF
-
-// filter return []
-let filteredUsers=users.filter((el,i)=>el.age==21);
-
-
-// let nums=["samir","brahim","aya"];
-
-// console.log(nums.sort())
-console.log(filteredUsers);
-
-
-let nums=[20,30,5,12,22,45,18];
-
-const Pair=nums.filter((el,i)=>el%2==0)
-const Impair=nums.filter((el,i)=>el%2!=0)
-console.log(Pair);
-console.log(Impair);
-// find 
-
-// reduce
-
-// findindex
-// let position=users.findIndex((el,i)=>el.age==22);
-// console.log(position)
-// map
-
-
-// let names=[];
-// for(let i of users){
-//     names.push(i.name);
+// let user={
+//     email:"omar@gmail.com",
+//     password:"pass123"
 // }
 
 
-let names=users.map((el,i)=>`<div>${el.name}</div>`);
-console.log(names)
+// let {email,password2}=user;
+// console.log(password2)
+// // let email=user.email;
+// // let password=user.password;
+
+// console.log(user3);
+// // let user1=arr[0]
+// // let user2=arr[1]
+// // let user3=arr[2]
+
+
+// // Arrays
+
+// // arr.hof((el,index)=>)
+
+
+
+// // find (Search)
+
+// let users=[
+//     {
+//         id:1,
+//         name:"Samir",
+//         age:48,
+//         profession:"Web developer"
+//     },
+//     {
+//         id:2,
+//         name:"Sara",
+//         age:22,
+//         profession:"Web Marketer"
+//     },
+//     {
+//         id:3,
+//         name:"Ibrahim",
+//         age:30,
+//         profession:"Graphic Designer"
+//     },
+//     {
+//         id:3,
+//         name:"Karim",
+//         age:30,
+//         profession:"Graphic Designer"
+//     },
+// ]
+
+
+// // let UserSearch=users.find((el,i)=>el.name.startsWith("Iphone"));
+// // console.log(UserSearch);
+
+
+// // HOF
+
+// // filter return []
+// let filteredUsers=users.filter((el,i)=>el.age==21);
+
+
+// // let nums=["samir","brahim","aya"];
+
+// // console.log(nums.sort())
+// console.log(filteredUsers);
+
+
+// let nums=[20,30,5,12,22,45,18];
+
+// const Pair=nums.filter((el,i)=>el%2==0)
+// const Impair=nums.filter((el,i)=>el%2!=0)
+// console.log(Pair);
+// console.log(Impair);
+// // find 
+
+// // reduce
+
+// // findindex
+// // let position=users.findIndex((el,i)=>el.age==22);
+// // console.log(position)
+// // map
+
+
+// // let names=[];
+// // for(let i of users){
+// //     names.push(i.name);
+// // }
+
+
+// let names=users.map((el,i)=>`<div>${el.name}</div>`);
+// console.log(names)
 
 
 
 
-// Reduce 
-let numbers=[10,20,30];
+// // Reduce 
+// let numbers=[10,20,30];
 
 
-// let somme=numbers.reduce((prev,curr)=>prev+curr,1)
-// console.log(somme)
+// // let somme=numbers.reduce((prev,curr)=>prev+curr,1)
+// // console.log(somme)
 
 
-// foreach
-// let ul;
-// let li;
-// ul=document.createElement("ul");
-// users.forEach((el,i)=>{
-//     li=document.createElement("li");
-//     li.innerHTML=el.name;
-//     ul.append(li);
+// // foreach
+// // let ul;
+// // let li;
+// // ul=document.createElement("ul");
+// // users.forEach((el,i)=>{
+// //     li=document.createElement("li");
+// //     li.innerHTML=el.name;
+// //     ul.append(li);
 
-// })
-// document.body.append(ul)
-
-
+// // })
+// // document.body.append(ul)
 
 
-// find
-// filter
-// map
-// reduce
-// foreach
 
-// ...existing code...
+
+// // find
+// // filter
+// // map
+// // reduce
+// // foreach
+
+// // ...existing code...
 
 const products = [
     {
@@ -219,24 +219,82 @@ const products = [
 
 
 
-// search a product By Name 
+// // search a product By Name 
 
 
 
-// filter  products By category 
+// // filter  products By category 
 
-// filter products By Prices [150-200]
-
-
-// Get  porducts with the max Rating
+// // filter products By Prices [150-200]
 
 
+// // Get  porducts with the max Rating
 
-// Transform Product to this 
-// <div>
-        // <h2>Name : TV</h2>
-        // <h3>Price : 200 $</h3>
-        // <span>Category : Electronics </span>
-        // <span>Rating : 4.5/5</span>
-        // <span>Disponible Or Out of Stock</span>
-// </div>
+
+
+// // Transform Product to this 
+// // <div>
+//         // <h2>Name : TV</h2>
+//         // <h3>Price : 200 $</h3>
+//         // <span>Category : Electronics </span>
+//         // <span>Rating : 4.5/5</span>
+//         // <span>Disponible Or Out of Stock</span>
+// // </div>
+
+
+
+// let MaXProducts=products.filter((el,i)=>el.rating==Math.max(...products.map((el,i)=>el.rating)))
+// console.log(MaXProducts)
+
+//  nums=[10,20,1,5,80]
+
+//  console.log(Math.max(...nums))
+
+
+
+// get min and max 
+// filter (price>=min && price <=max)
+// button
+
+
+
+let inputs=document.querySelectorAll("input");
+
+
+let btn = document.querySelector("button");
+
+
+// btn.onclick=()=>{
+//     let FIlterProduct=products.filter((el,i)=>el.price>=inputs[0].value && el.price<=inputs[1].value);
+//     if(FIlterProduct.length==0){
+//         alert("No Products");
+//     }else{
+//         console.log(FIlterProduct);
+//     }
+// }
+
+
+
+
+
+// PROMISE
+
+
+// fetch(URL,config)
+
+
+
+// Url = Origin
+// config (method (GET POST DELETE PUT PATCH) headers:{"content"}) 
+// headers Content-Type application/json  Authorization No auth  Basic, Bearer JWT , OAUTH
+
+
+// BODY
+
+// GET
+
+
+fetch("https://jsonplaceholder.typicode.com/posts",{method:"GET"})
+.then(res=>res.json())
+.then((data)=>{})
+.catch(e)
